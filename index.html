@@ -22,7 +22,8 @@
   .horizon { position:fixed; left:0; right:0; bottom:12vh; height:2px;
     background: linear-gradient(90deg, transparent, rgba(242,140,40,0.75), transparent); }
   main { position:relative; }
-  .mark { font-size: clamp(40px, 7vw, 84px); font-weight: 700; letter-spacing: 0.14em; line-height:1.05; }
+  .mark { font-size: clamp(40px, 7vw, 84px); font-weight: 800; letter-spacing: -0.015em; line-height:1.05; display:inline-flex; align-items:center; gap:0.22em; }
+  .qsun { height: 0.78em; width: 0.78em; display:block; }
   .net { display:block; font-size: clamp(14px, 2.2vw, 24px); font-weight:500; letter-spacing: 0.55em;
     color: var(--sunrise); margin-top: 14px; padding-left: 0.55em; }
   .line { margin: 56px auto 0; font-size: clamp(17px, 2.4vw, 26px); color: var(--cream); font-weight: 500; }
@@ -37,9 +38,9 @@
 <body>
 <div class="glow"></div><div class="horizon"></div>
 <main>
-  <div class="mark">FAIR SKY<span class="net">NETWORK</span></div>
+  <div class="mark"><svg class="qsun" viewBox="0 0 100 100" aria-hidden="true"><path d="M0 100 A100 100 0 0 1 100 0 L100 100 Z" fill="currentColor"/></svg>FairSky<span class="net">NETWORK</span></div>
   <div class="line">Something's coming.</div>
-  <div class="sub">Clear skies for aerospace material.</div>
+  <div class="sub">Prove authenticity. Verify in seconds.</div>
 </main>
 </body>
 </html>
