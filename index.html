@@ -11,16 +11,11 @@
   html,body { height:100%; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
-    background: linear-gradient(180deg, #060B1A 0%, #0A1F44 55%, #1C4D8F 85%, #6FA7D6 97%, #F4D6B0 100%);
+    background: linear-gradient(180deg, #060B1A 0%, #0A1F44 55%, #1C4D8F 85%, #6FA7D6 100%);
     color: var(--cream);
     display:flex; align-items:center; justify-content:center;
     text-align:center; padding: 24px; overflow:hidden;
   }
-  .glow { position:fixed; left:50%; bottom:-42vh; width:140vw; height:70vh; transform:translateX(-50%);
-    background: radial-gradient(closest-side, rgba(242,140,40,0.28), rgba(242,140,40,0.08) 55%, transparent 75%);
-    pointer-events:none; }
-  .horizon { position:fixed; left:0; right:0; bottom:12vh; height:2px;
-    background: linear-gradient(90deg, transparent, rgba(242,140,40,0.75), transparent); }
   main { position:relative; }
   .mark { font-size: clamp(40px, 7vw, 84px); font-weight: 800; letter-spacing: -0.015em; line-height:1.05; display:inline-flex; align-items:center; gap:0.22em; }
   .qsun { height: 0.78em; width: 0.78em; display:block; }
@@ -36,7 +31,6 @@
 </style>
 </head>
 <body>
-<div class="glow"></div><div class="horizon"></div>
 <main>
   <div class="mark"><svg class="qsun" viewBox="0 0 100 100" aria-hidden="true"><path d="M0 100 A100 100 0 0 1 100 0 L100 100 Z" fill="currentColor"/></svg>FairSky<span class="net">NETWORK</span></div>
   <div class="line">Something's coming.</div>
